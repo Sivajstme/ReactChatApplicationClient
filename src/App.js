@@ -12,9 +12,10 @@ import Func from "./Components/Test/TestHooks";
 const App = () => {
     return(
     <Router>
-        <Route path='/' exact component={Func} />
+        <Route path='/' exact component={Join} />
         <Route path='/chat' component={Chat} />
     </Router>
+    
     )
 };
 

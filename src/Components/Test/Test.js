@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import Func from './TestHooks';
 
 class Test extends Component {
 
@@ -16,7 +17,15 @@ class Test extends Component {
     ]
     }
     showEvent = () =>{
-        console.log('object')
+        console.log('object');
+        this.setState({
+            persons:[
+                {name:'marrrr',
+                age:123
+                },
+                {name:'dan',age:2123}
+                    
+                ]})
     }
 
     render(){
@@ -26,7 +35,9 @@ class Test extends Component {
             <div>
 
             <button onClick={this.showEvent}>ClickMe</button>
-
+                <div>{this.state.persons[0].name}</div>
+                <p click={this.showEvent}>Hello</p>
+                <Func />
             </div>
 
         )
